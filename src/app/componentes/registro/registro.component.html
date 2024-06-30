@@ -1,1 +1,63 @@
-<p>registro works!</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="./registro.component.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <h2 class="text-center">Registro</h2>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label><br>
+            <i class="fa-solid fa-signature"></i>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label><br>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label><br>
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label><br>
+            <i class="fa-solid fa-key"></i>
+            <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña">
+          </div>
+          <button type="button" class="btn btn-primary btn-block" onclick="redirectToCarga()">Registrar</button>
+          <script>
+            function redirectToCarga() {
+              window.location.href = 'http://localhost:4200/cargar-archivos';
+            }
+          </script>
+          <div class="text-center mt-3">
+            <p>¿Ya tiene una cuenta?</p>
+            <a href="http://localhost:4200/login" class="btn btn-primary">Ingresar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    function redirectToCarga() {
+      window.location.href = 'http://localhost:4200/cargar-archivos';
+    }
+  </script>
+</body>
+</html>

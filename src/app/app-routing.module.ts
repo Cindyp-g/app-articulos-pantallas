@@ -7,7 +7,7 @@ import { LoginComponent } from './componentes/login/login.component';
 const routes: Routes = [
 {path:'login',component:LoginComponent},
 {path:'registro',component:RegistroComponent},
-{path:'cargar-archivo',component:CargarArchivosComponent},
+{path:'cargar-archivos',component:CargarArchivosComponent},
 ];
 
 @NgModule({
